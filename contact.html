@@ -19,7 +19,67 @@
         <hr>
 
     </header>
+    <section>
+        <form action="fakepage.html" method="POST">
 
+            <!-- Text Fields (Name, email, phone) -->
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name"> <br>
+    
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" name="email"> <br>
+    
+            <label for="phone">Phone:</label><br>
+            <input type="text" id="phone" name="phone"> <br>
+    
+            <!-- Checking Reason for Outreach -->
+            <label for="reason">Reason for Inquiry:</label><br>
+            <select name="reason" id="reason">
+                <option value="default" selected>Catering</option>
+                <option value="privateParty">Private Party</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Other</option>
+            </select><br><br>
+
+            <!-- Textarea  for Additional Info-->
+            <label for="info">Additional Information</label><br>
+            <textarea name="info" id="info" cols="30" rows="10"></textarea><br>
+
+            <!-- Radio Buttons -->
+            <fieldset>
+                <legend>Have you been to the restaurant?</legend><br>
+    
+                <input type="radio" name="questionnaire" id="choice1" value="no" checked>
+                <label for="choice1">No</label><br>
+    
+                <input type="radio" name="questionnaire" id="choice2" value="yes">
+                <label for="choice2">Yes</label><br>
+            </fieldset><br>
+    
+            <!-- Checkbox Section -->
+            <fieldset>
+                <legend>Best days to contact you: </legend><br>
+    
+                <input type="checkbox" name="day" id="monday" value="monday">
+                <label for="monday">M</label><br>
+    
+                <input type="checkbox" name="day" id="tuesday" value="tuesday">
+                <label for="tuesday">T</label><br>
+
+                <input type="checkbox" name="day" id="wednesday" value="wednesday">
+                <label for="wednesday">W</label><br>
+
+                <input type="checkbox" name="day" id="thursday" value="thursday">
+                <label for="thursday">Th</label><br>
+
+                <input type="checkbox" name="day" id="friday" value="friday">
+                <label for="friday">F</label><br>
+            </fieldset><br>
+    
+            <input type="submit" value="Send Request" name="submit"><br>
+        </form>
+    </section>
+    <hr>
 
     <footer>
         1659 Mason Way, Green Bay, WI 54302 <br>
