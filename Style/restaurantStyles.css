@@ -1,0 +1,52 @@
+
+/* Set Font For All Pages */
+body{
+    font-family: 'Courier Prime', monospace;
+    background-color: #b6e8ec;
+    box-sizing: border-box;
+}
+hr{
+    background-color: #b6e8ec;
+}
+
+/* Header Styles */
+header h1{
+    color: #b6e8ec;
+    font-size: 5em;
+    text-align: center;
+}
+.jumbotron{
+    background-color: #41395c;
+}
+.btn{
+    background-color: #6d84ab;
+    color: #b6e8ec;
+}
+.btn:hover{
+    background-color: #84b2c3;
+    color: #41395c;
+    text-decoration: none;
+    font-weight: bold;
+}
+.btn:visited{
+    background-color: #fb6262;
+    color: #333;
+}
+
+/* Footer Styles */
+footer{
+    background-color: #41395c;
+    color: #b6e8ec;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Contact Form Submit Button */
+
+.contact-submit{
+    background-color: #525e8b;
+    color: #b6e8ec;
+}
+.contact-submit:hover{
+    background-color: #41395c;
+}

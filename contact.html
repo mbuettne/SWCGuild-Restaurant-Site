@@ -9,79 +9,84 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
     <link rel="stylesheet" href="/Style/restaurantStyles.css">
+    <link href="https://fonts.googleapis.com/css?family=Courier+Prime&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <div class="container-fluid p-0">
+    <header class="jumbotron">
 
         <h1>Buettner Brewing</h1>
-        <hr>
-        <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/menu.html">Menu</a></li>
-            <li><a href="/contact.html">Contact Us</a></li>
-        </ul>
-        <hr>
+            <hr>
+            <nav class="text-right">
+                <a href="/index.html" class="btn btn-lg">Home</a>
+                <a href="/menu.html" class="btn btn-lg">Menu</a>
+                <a href="/contact.html" class="btn btn-lg">Contact Us</a>
+            </nav>
+            <hr>
 
     </header>
     <section>
-        <form action="fakepage.html" method="POST">
+        <div class="container">
+            <form action="fakepage.html" method="POST">
+                <div class="form-group">
+                    <!-- Text Fields (Name, email, phone) -->
+                    <label class="control-label" for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" class="form-control"> <br>
+            
+                    <label class="control-label" for="email">Email:</label><br>
+                    <input type="text" id="email" name="email" class="form-control"> <br>
+            
+                    <label class="control-label" for="phone">Phone:</label><br>
+                    <input type="text" id="phone" name="phone" class="form-control"> <br>
+            
+                    <!-- Checking Reason for Outreach -->
+                    <label class="control-label" for="reason">Reason for Inquiry:</label><br>
+                    <select name="reason" id="reason">
+                        <option value="default" selected>Catering</option>
+                        <option value="privateParty">Private Party</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="other">Other</option>
+                    </select><br><br>
 
-            <!-- Text Fields (Name, email, phone) -->
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name"> <br>
-    
-            <label for="email">Email:</label><br>
-            <input type="text" id="email" name="email"> <br>
-    
-            <label for="phone">Phone:</label><br>
-            <input type="text" id="phone" name="phone"> <br>
-    
-            <!-- Checking Reason for Outreach -->
-            <label for="reason">Reason for Inquiry:</label><br>
-            <select name="reason" id="reason">
-                <option value="default" selected>Catering</option>
-                <option value="privateParty">Private Party</option>
-                <option value="feedback">Feedback</option>
-                <option value="other">Other</option>
-            </select><br><br>
+                    <!-- Textarea  for Additional Info-->
+                    <label class="control-label" for="info">Additional Information</label><br>
+                    <textarea name="info" id="info" cols="30" rows="10"></textarea><br>
 
-            <!-- Textarea  for Additional Info-->
-            <label for="info">Additional Information</label><br>
-            <textarea name="info" id="info" cols="30" rows="10"></textarea><br>
+                    <!-- Radio Buttons -->
+                    <fieldset>
+                        <label class="control-label" for="info">Have you been to the restaurant?</label><br>
+            
+                        <input type="radio" name="questionnaire" id="choice1" value="no" checked>
+                        <label class="control-label" for="choice1">No</label><br>
+            
+                        <input type="radio" name="questionnaire" id="choice2" value="yes">
+                        <label class="control-label" for="choice2">Yes</label><br>
+                    </fieldset><br>
+            
+                    <!-- Checkbox Section -->
+                    <fieldset>
+                        <label class="control-label" for="info">Best days to contact you:</label><br>
+            
+                        <input type="checkbox" name="day" id="monday" value="monday">
+                        <label class="control-label" for="monday">M</label><br>
+            
+                        <input type="checkbox" name="day" id="tuesday" value="tuesday">
+                        <label class="control-label" for="tuesday">T</label><br>
 
-            <!-- Radio Buttons -->
-            <fieldset>
-                <legend>Have you been to the restaurant?</legend><br>
-    
-                <input type="radio" name="questionnaire" id="choice1" value="no" checked>
-                <label for="choice1">No</label><br>
-    
-                <input type="radio" name="questionnaire" id="choice2" value="yes">
-                <label for="choice2">Yes</label><br>
-            </fieldset><br>
-    
-            <!-- Checkbox Section -->
-            <fieldset>
-                <legend>Best days to contact you: </legend><br>
-    
-                <input type="checkbox" name="day" id="monday" value="monday">
-                <label for="monday">M</label><br>
-    
-                <input type="checkbox" name="day" id="tuesday" value="tuesday">
-                <label for="tuesday">T</label><br>
+                        <input type="checkbox" name="day" id="wednesday" value="wednesday">
+                        <label class="control-label" for="wednesday">W</label><br>
 
-                <input type="checkbox" name="day" id="wednesday" value="wednesday">
-                <label for="wednesday">W</label><br>
+                        <input type="checkbox" name="day" id="thursday" value="thursday">
+                        <label class="control-label" for="thursday">Th</label><br>
 
-                <input type="checkbox" name="day" id="thursday" value="thursday">
-                <label for="thursday">Th</label><br>
-
-                <input type="checkbox" name="day" id="friday" value="friday">
-                <label for="friday">F</label><br>
-            </fieldset><br>
-    
-            <input type="submit" value="Send Request" name="submit"><br>
-        </form>
+                        <input type="checkbox" name="day" id="friday" value="friday">
+                        <label class="control-label" for="friday">F</label><br>
+                    </fieldset><br>
+            
+                    <input class="btn contact-submit" type="submit" value="Send Request" name="submit"><br>
+                </div>
+            </form>
+        </div>
     </section>
     <hr>
 
@@ -93,6 +98,6 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-
+</div>
 </body>
 </html>
