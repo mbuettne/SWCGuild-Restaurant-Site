@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Buettner Brewing | Menu</title>
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
     integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
     <link rel="stylesheet" href="/Style/restaurantStyles.css">
@@ -13,19 +14,20 @@
 </head>
 <body>
     <div class="container-fluid p-0">
-        <header class="jumbotron">
+        <header class="py-4 mb-4">
 
             <h1>Buettner Brewing</h1>
             <hr>
-            <nav class="text-right">
-                <a href="/index.html" class="btn btn-lg">Home</a>
-                <a href="/menu.html" class="btn btn-lg">Menu</a>
-                <a href="/contact.html" class="btn btn-lg">Contact Us</a>
-            </nav>
-            <hr>
+            <ul class="nav nav-tabs justify-content-end">
+                <li class="nav-item"><a href="/index.html" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li class="nav-item"><a href="/menu.html" class="nav-link active">Menu</a></li>
+                <li class="nav-item"><a href="/contact.html" class="nav-link">Contact Us</a></li>
+            </ul>
+            
 
         </header>
         <section>
+            <h1 class="text-center">Food Menu</h1>
             <div class="row mx-5">
                 <article class="col-lg-4 col-md-6 col-sm-12 pt-2 border border-dark">
                     <h4 class="text-center">Burger and Fries</h4>
@@ -83,9 +85,10 @@
                 </article>
             </div>
             <hr>
+            <h1 class="text-center">Beer Specials</h1>
             <div class="row mx-5">
                 <div class="table-responsive">
-                    <table class="table table-striped table-hover">
+                    <table class="table table-striped table-hover table-bordered">
                         <thead>
                             <tr>
                                 <th scope="col">Beer Type</th>

@@ -2,41 +2,43 @@
 /* Set Font For All Pages */
 body{
     font-family: 'Courier Prime', monospace;
-    background-color: #b6e8ec;
+    background-color: #c0c5ce;
     box-sizing: border-box;
 }
 hr{
-    background-color: #b6e8ec;
+    background-color: #66b2b2;
 }
 
 /* Header Styles */
+header{
+    background-color: #536878;
+}
 header h1{
-    color: #b6e8ec;
+    color: #66b2b2;
     font-size: 5em;
     text-align: center;
 }
 .jumbotron{
-    background-color: #41395c;
+    background-color: #536878;
 }
-.btn{
-    background-color: #6d84ab;
-    color: #b6e8ec;
+.nav{
+    border-bottom: #66b2b2 1px solid;
 }
-.btn:hover{
-    background-color: #84b2c3;
-    color: #41395c;
+.nav-link{
+    text-decoration: none;
+    color: #66b2b2;
+}
+.nav-link:hover{
     text-decoration: none;
     font-weight: bold;
-}
-.btn:visited{
-    background-color: #fb6262;
+    background-color: #66b2b2;
     color: #333;
 }
 
 /* Footer Styles */
 footer{
-    background-color: #41395c;
-    color: #b6e8ec;
+    background-color: #66b2b2;
+    color: #333;
     text-align: center;
     padding: 1em 0;
 }
