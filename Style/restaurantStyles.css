@@ -21,6 +21,9 @@ header h1{
 .jumbotron{
     background-color: #536878;
 }
+.jumbotron h1{
+    color: #66b2b2;
+}
 .nav{
     border-bottom: #66b2b2 1px solid;
 }
